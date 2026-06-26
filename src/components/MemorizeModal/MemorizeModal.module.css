@@ -1,0 +1,68 @@
+.overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.55);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 100;
+}
+
+.modal {
+  background: linear-gradient(145deg, #fff9e6, #ffe4f3);
+  border: 4px solid #ff6b9d;
+  border-radius: 24px;
+  padding: 2rem;
+  max-width: 90vw;
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.25);
+  text-align: center;
+}
+
+.title {
+  margin: 0 0 1.5rem;
+  font-family: 'Comic Sans MS', cursive, sans-serif;
+  color: #5c2d91;
+  font-size: 1.5rem;
+}
+
+.sequence {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+
+.sequenceItem {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.index {
+  background: #5c2d91;
+  color: white;
+  width: 1.75rem;
+  height: 1.75rem;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 0.9rem;
+}
+
+.countdown {
+  font-size: 3rem;
+  font-weight: bold;
+  color: #e63946;
+  font-family: Impact, sans-serif;
+  animation: pulse 1s ease-in-out infinite;
+}
+
+@keyframes pulse {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.15); }
+}

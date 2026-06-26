@@ -1,0 +1,49 @@
+.house {
+  position: absolute;
+  bottom: 0.5rem;
+  left: 0.5rem;
+  max-height: var(--entity-max-height, 12.5vh);
+  width: min(12.5vh, 14vw);
+  z-index: 5;
+  pointer-events: none;
+}
+
+.roof {
+  width: 0;
+  height: 0;
+  border-left: min(6.25vh, 7vw) solid transparent;
+  border-right: min(6.25vh, 7vw) solid transparent;
+  border-bottom: min(4vh, 5vw) solid #c0392b;
+  margin: 0 auto;
+}
+
+.walls {
+  background: #f4d03f;
+  border: 3px solid #8b6914;
+  border-radius: 0 0 8px 8px;
+  height: min(6vh, 8vw);
+  position: relative;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  padding-bottom: 2px;
+}
+
+.door {
+  width: 35%;
+  height: 70%;
+  background: #6d4c41;
+  border-radius: 4px 4px 0 0;
+  border: 2px solid #4e342e;
+}
+
+.window {
+  position: absolute;
+  top: 20%;
+  right: 15%;
+  width: 22%;
+  height: 30%;
+  background: #87ceeb;
+  border: 2px solid #4a6741;
+  border-radius: 2px;
+}

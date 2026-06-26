@@ -1,0 +1,42 @@
+.monkey {
+  display: block;
+  width: min(12.5vh, 10vw);
+  height: min(12.5vh, 10vw);
+  filter: drop-shadow(2px 3px 4px rgba(0,0,0,0.35));
+  overflow: visible;
+}
+
+/* ── Walking animations ── */
+
+/* Front leg swings forward, back leg swings back (opposite phase) */
+.legFrontWalk {
+  animation: legSwingForward 0.4s ease-in-out infinite alternate;
+}
+.legBackWalk {
+  animation: legSwingBack 0.4s ease-in-out infinite alternate;
+}
+
+/* Arms swing opposite to legs */
+.armFrontWalk {
+  animation: armSwingBack 0.4s ease-in-out infinite alternate;
+}
+.armBackWalk {
+  animation: armSwingForward 0.4s ease-in-out infinite alternate;
+}
+
+@keyframes legSwingForward {
+  from { transform: rotate(-18deg); }
+  to   { transform: rotate(18deg);  }
+}
+@keyframes legSwingBack {
+  from { transform: rotate(18deg);  }
+  to   { transform: rotate(-18deg); }
+}
+@keyframes armSwingBack {
+  from { transform: rotate(14deg);  }
+  to   { transform: rotate(-14deg); }
+}
+@keyframes armSwingForward {
+  from { transform: rotate(-14deg); }
+  to   { transform: rotate(14deg);  }
+}

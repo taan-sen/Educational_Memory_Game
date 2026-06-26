@@ -1,0 +1,24 @@
+.playfield {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: visible;
+  background: linear-gradient(180deg, #a8e6cf 0%, #dcedc1 60%, #88c999 100%);
+}
+
+.houseAnchor {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: 5;
+}
+
+.symbolWrapper {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  z-index: 10;
+}
+
+.target {
+  filter: drop-shadow(0 0 8px rgba(255, 215, 0, 0.8));
+}

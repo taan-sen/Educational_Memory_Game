@@ -1,0 +1,1 @@
+export { GreenTick } from './GreenTick'

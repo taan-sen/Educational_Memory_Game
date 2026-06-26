@@ -1,0 +1,1 @@
+export { MemorizeModal } from './MemorizeModal'
